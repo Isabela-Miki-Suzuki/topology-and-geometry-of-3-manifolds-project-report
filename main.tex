@@ -1,0 +1,120 @@
+\documentclass[12pt]{report}
+\include{preamble}
+
+
+%%------ 
+%% Comandos gerais
+%% Observação: o arquivo "comandos.tex" tem que estar presente.
+%%------
+\input{comandos}
+%
+%%-----
+%% Página de título
+%% Observação: As definições que aparecem a seguir comporão a
+%%             página de título e a folha de rosto.
+%%-----
+%% Define o nome da universidade onde o projeto foi desenvolvido.
+\universidade{University of São Paulo}
+%
+%% Define o nome da faculdade onde o projeto foi desenvolvido.
+\faculdade{Institute of Mathematics and Statistics (IME)}
+%
+%% Define o título do projeto.
+\titulo{TOPOLOGY AND GEOMETRY OF 3-MANIFOLDS}
+%
+%% Define a agencia de Fomento e a abreviatura. O primeiro argumento é o 
+%% nome por extenso e o segundo a abreviatura.
+%% Ambos os argumentos são obrigatórios
+\agFomento{Fundação de Amparo à Pesquisa do Estado de São Paulo}{FAPESP}
+%
+%% Define o tipo de relatório. Pode ser Anual ou Final.
+%% Não é obrigatório definir o tipo de relatório.
+\tipoRelatorio{Annual}
+%
+%% Define a modalidade de Projeto. Pode ser temático, regular, etc.
+\modalidadeProjeto{Thematic Research Assistance - Scientific Initiation}
+%
+%% Define o número do projeto.
+%% Não é obrigatório definir o número do projeto.
+\numProjeto{2021/06678-5} 
+%
+%% Define o autor do relatório.
+\autor{Isabela Miki Suzuki}
+%
+%% Define a equipe do projeto (incluindo o pesquisador responsável no comando \membroA{}
+\membroA{André Salles de Carvalho}
+%% Define o período da vigência do Projeto.
+\periodoRelatorio{01/08/2021 to 31/07/2023}
+%
+%% Define o período coberto pelo relatório.
+\periodoVigencia{01/08/2021 to 31/07/2022}
+%
+%% Define a cidade onde o projeto foi desenvolvido.
+\cidade{Itapecerica da Serra}
+
+%%-----
+%% Página de título
+%% Observação: Os comandos a seguir não devem ser mudados, 
+%%             exceto caso necessário.
+%%-----
+\begin{document}
+%
+%% Define a numeração em romanos.
+\pagenumbering{roman}
+%
+%% Gera a folha de título.
+\geraTitulo
+%
+%% Gera a folha de rosto.
+\folhaDeRosto
+%
+%% Escreva aqui o resumo em português.
+%\Resumo{
+%Isso é um teste babalsbak das bsak blkab lsab dbaslkb saldbd lsab %lasbdlsba ldbsa lbds lab ldkasbkldbs alk bdaslkb ldsakb lsdablk bald %blkb dlskab lasdbl sablkds ablkb lkasbd lsdbaklb d 
+%  }
+%
+%% Escreva aqui o resumo em inglês.
+%\Abstract{
+%teste in english
+%}
+%
+%% Adicionará o sumário.
+%% Mantenha o \thispagestyle{empty} e \clearpage
+\tableofcontents
+\thispagestyle{empty}
+\clearpage
+%
+%% Define a numeração em arábicos.
+\pagenumbering{arabic}
+
+%%-----
+%% Formatação do título da seção
+%%-----
+\sectionfont{\scshape}
+
+%%-----
+%% Corpo do texto
+%%-----
+\input{01ResumoDoProjetoProposto}
+
+\input{02ResumoDasAtividadesRealizadas}
+
+\input{03RealizacoesDoPeriodo}
+
+\input{04PlanoDeAtividades}
+
+\input{05all}
+
+%\input{05ParticipacaoEvento}
+
+%\input{06ListaPublicacoes}
+
+%\input{07ListaTrabalhos}
+
+\addcontentsline{toc}{chapter}{\bibname}
+\bibliographystyle{abntex2-num}
+\bibliography{bibliografia}
+
+\input{08apendice}
+
+\end{document}
